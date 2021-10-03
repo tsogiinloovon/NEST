@@ -9,7 +9,6 @@ const BuildControls = (probs) => {
       <p>бүргерийн үнэ:{probs.price}</p>
 
       {Object.keys(probs.ingredientsNames).map((el) => {
-        console.log(el)
         return (
           <BuildControl
             key={el}
@@ -21,7 +20,7 @@ const BuildControls = (probs) => {
           />
         );
       })}
-      <button disabled = {probs.disabled}className={css.OrderButton}>Захиалах</button>
+      <button onClick = {probs.showConfirmModal} disabled = {probs.disabled}className={css.OrderButton}>Захиалах</button>
     </div>
   );
 };

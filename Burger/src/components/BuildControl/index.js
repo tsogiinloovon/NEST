@@ -1,7 +1,6 @@
 import React from "react";
 import css from "./style.module.css";
 const BuildControl = (probs) => {
-  console.log(probs)
   return(
   <div className={css.BuildControl}>
     <div  className={css.Label}>

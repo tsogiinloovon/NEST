@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../General/Button';
 
 
 const OrderSummary = (probs)=>{
@@ -12,6 +13,8 @@ const OrderSummary = (probs)=>{
                 })}
             </ul>
             <p>Цаашаа үргэжлүүлэх үү</p>
+            <Button daragdsan = {probs.onCancel} btnType='Danger' text = 'татгалзах'/>
+            <Button daragdsan = {probs.onContinue} btnType='Success' text='үргэлжлүүлэх'/>
         </div>
     )
 }
